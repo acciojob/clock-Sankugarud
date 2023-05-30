@@ -31,5 +31,5 @@ setInterval( () => {
 	}
 
 	 let currentTime = `${day}/${month}/${year}, ${hour}:${min}:${sec} ${am_pm}`;
-    timer.innerHTML = currentTime;
+    timer.innerText = currentTime;
 }, 1000);
