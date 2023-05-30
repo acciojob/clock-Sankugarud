@@ -26,5 +26,6 @@ function showTime() {
  
     let currentTime = `${day}/${month}/${year}, ${hour}:${min}:${sec} ${am_pm}`;
     clock.innerHTML = currentTime;
+	document.body.append(clock);
 }
 showTime();
