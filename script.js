@@ -2,14 +2,14 @@
 let timer = document.getElementById("timer");
 
 setInterval( () => {
-	let d = new Date();
-	let month = d.getMonth();
-	let date = d.getDate();
+	  let d = new Date();
+	let day = d.getDate();
+	let month = d.getMonth() + 1;
 	let year = d.getFullYear();
-	let hour = d.getHours();
+    let hour = d.getHours();
     let min = d.getMinutes();
     let sec = d.getSeconds();
-	let am_pm = "AM";
+    let am_pm = "AM";
 
 	if(hour > 12){
 		hour = hour - 12;
@@ -32,4 +32,4 @@ setInterval( () => {
 
 	 let currentTime = `${day}/${month}/${year}, ${hour}:${min}:${sec} ${am_pm}`;
     timer.innerHTML = currentTime;
-}, 1000)
+}, 1000);
